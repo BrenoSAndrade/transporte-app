@@ -19,38 +19,52 @@ transporte-app/
 
 ---
 
-## 🚀 Como executar o projeto localmente
+🚀 Passo a Passo para Executar o Projeto
+📁 1. Clonar o repositório
+Abra o terminal e execute:
 
-### 1. Clonar o repositório
-
-```bash
+cd C:\Users\User\Desktop
 git clone https://github.com/BrenoSAndrade/transporte-app.git
 cd transporte-app
-2. Iniciar o Backend (Django)
+⚙️ 2. Executar o Backend (Django)
+A. Entrar na pasta backend
 
 cd backend
+B. Instalar as dependências do Python (arquivo está na raiz)
+
 python -m pip install -r ../requirements_backend.txt
+C. Aplicar as migrações do Django
+
+python manage.py migrate
+D. Iniciar o servidor Django
+
 python manage.py runserver
-📍 A API estará disponível em:
-http://127.0.0.1:8000
+Acesse a API em:
+🔗 http://127.0.0.1:8000
 
-3. Iniciar o Frontend (React)
-Abra um novo terminal:
+✅ Observação: O endpoint ativo é http://127.0.0.1:8000/api/analisar/
 
-cd frontend
+🖥️ 3. Executar o Frontend (React)
+A. Em outro terminal, acesse a pasta do frontend:
+
+cd C:\Users\User\Desktop\transporte-app\frontend
+B. Instalar as dependências do Node
+
 npm install
+C. Iniciar o servidor de desenvolvimento do React
+
 npm run dev
-📍 A interface estará disponível em:
-http://localhost:5173
+Acesse a interface em:
+🔗 http://localhost:5173
 
-🧪 Como usar
-Acesse a interface do frontend (localhost:5173)
+🧪 4. Como usar
+Acesse o frontend no navegador: http://localhost:5173
 
-Selecione e envie um arquivo .csv com dados de transporte
+Envie um arquivo .csv com dados de transporte.
 
-O backend irá analisar os dados com o algoritmo KMeans
+A API processará os dados com KMeans.
 
-A resposta será exibida diretamente na tela
+Os resultados aparecerão na tela com gráficos e mapas.
 
 ⚙️ Tecnologias Utilizadas
 Frontend
