@@ -16,11 +16,6 @@ transporte-app/
 ├── requirements_backend.txt # Lista de dependências Python
 ├── .gitignore # Ignora arquivos desnecessários no Git
 └── README.md
-
-yaml
-Copiar
-Editar
-
 ---
 
 ## Como executar o projeto localmente
