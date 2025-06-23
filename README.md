@@ -26,9 +26,7 @@ transporte-app/
 git clone https://github.com/SEU_USUARIO/transporte-app.git
 cd transporte-app
 2. Iniciar o backend
-bash
-Copiar
-Editar
+
 cd backend
 python -m pip install -r ../requirements_backend.txt
 python manage.py runserver
@@ -36,9 +34,7 @@ A API estará disponível em:
 http://127.0.0.1:8000
 
 3. Iniciar o frontend
-bash
-Copiar
-Editar
+
 cd ../frontend
 npm install
 npm run dev
